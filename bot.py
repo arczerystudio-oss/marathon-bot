@@ -1,6 +1,8 @@
 import discord
 
-TOKEN = "MTQ2MzYzMzc1NDg3MzY1OTY1Nw.GLANQf.O4NoA0RHcJ3SmR1-wzasRQd3Qd8jEnXEF1DMxI"
+import os
+TOKEN = os.getenv("DISCORD_TOKEN")
+
 
 intents = discord.Intents.default()
 client = discord.Client(intents=intents)
